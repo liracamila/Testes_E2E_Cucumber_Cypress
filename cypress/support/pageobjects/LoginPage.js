@@ -27,6 +27,16 @@ class LoginPage {
             .invoke('attr', 'value')
             .should('eq', 'Conecte-se')
     }
+
+    forgotPassword(){
+        cy.get(loginElements.botaoForgotPassword()).click()
+    }
+
+    visualizarCampoEmail(){
+        cy.get(loginElements.campoEmail())
+            .invoke('attr', 'value')
+            .should('eq', 'Request reset link')
+    }
 }
 
 export default LoginPage;

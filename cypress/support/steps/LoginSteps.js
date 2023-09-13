@@ -13,9 +13,9 @@ Then('na página são exibidos os campos email, senha e botão conecte-se', () =
 })
 
 And('clico em Forgot Password?', () => {
-
+    loginPage.forgotPassword()
 })
 
 Then('será direcionado para a página que solicita o email', () => {
-
+    loginPage.visualizarCampoEmail()
 })
